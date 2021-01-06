@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("./webfontkit-20201216-115907/montserrat-extralight-webfont.woff")
+    format("woff");
+}
+
+.App {
+}
+h1 {
+  margin: 0;
+  color: #64647c;
+  font-family: CustomFont;
+}
+.celdasForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  margin-right: 20px;
+}
+.parametrosEntrada {
+  color: #545b74;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 18px;
+  font-size: 25px;
+  font-family: CustomFont;
+  font-weight: 600;
+  padding-left: 18px;
+}
+.formDiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+.headerDiv {
+  background-color: #bcc4cc;
+  min-height: 80px;
+  height: auto;
+  width: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  padding: 20px;
+  background-color: #545b74;
+  box-shadow: 5px 5px 1px grey;
+  margin: 20px;
+}
+label {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  color: white;
+}
+
+/*------------BOTONES------------*/
+.botonesDiv {
+  display: flex;
+  max-width: 280px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.botonesDiv button {
+  max-width: 400px;
+  width: 120px;
+  height: 30px;
+  border: 0;
+  background-color: #c4acb4;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 15px;
+  transition: width 0.3s, height 0.3s;
+}
+
+.botonesDiv button:hover {
+  width: 130px;
+  height: 35px;
+}
+
+/*------------SELECT------------*/
+select {
+  width: 308px;
+  height: 30px;
+  border-width: 0;
+  padding-left: 5px;
+  background-color: whitesmoke;
+  border-left: solid #c4acb4 3px;
+  transition: width 0.3s, height 0.3s;
+}
+select:hover {
+  width: 308px;
+  height: 35px;
+  box-shadow: 5px 5px 1px grey;
+}
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+/*------------INPUT------------*/
+input {
+  width: 300px;
+  height: 30px;
+  padding: 0;
+  padding-left: 5px;
+  border-width: 0;
+  border-left: solid #c4acb4 3px;
+  transition: width 0.3s, height 0.3s;
+}
+input:hover {
+  width: 308px;
+  height: 35px;
+  padding-left: 5px;
+  box-shadow: 5px 5px 1px grey;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+  padding-left: 5px;
+}
+
+/*-----PARA SACAR EL BORDE INTERNO EN FOCUS-----*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
